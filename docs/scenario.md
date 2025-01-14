@@ -8,10 +8,12 @@ graph TD
     C --> D2[TorProject 분석]
     C --> D3[Urlscan.io 분석]
     C --> D4[VirusTotal 분석]
+    C --> D5[AbuseIPDB 분석]
     D1 --> E[분석 결과 수집]
     D2 --> E
     D3 --> E
     D4 --> E
+    D5 --> E
     E --> F{이상 IP인가?}
     F -->|Yes| G[이상 IP로 판단]
     F -->|No| H[정상 IP로 판단]
@@ -28,6 +30,7 @@ graph TD
     style D2 fill:#f96,stroke:#333,stroke-width:2px
     style D3 fill:#f96,stroke:#333,stroke-width:2px
     style D4 fill:#f96,stroke:#333,stroke-width:2px
+    style D5 fill:#f96,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#ffcc00,stroke:#333,stroke-width:2px
     style G fill:#f96,stroke:#333,stroke-width:2px

@@ -31,3 +31,6 @@
 /**/server.key
 /**/server.crt
 /**/ca.pem
+
+## python
+__pycache__/
