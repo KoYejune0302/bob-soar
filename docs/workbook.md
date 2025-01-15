@@ -19,7 +19,7 @@
 ### 작업(Task) 목록
 
 1. **IP 분석 시작**
-   - Cortex를 통해 ThreatMiner, TorProject, Urlscan.io, VirusTotal 분석 실행
+   - Cortex를 통해 ThreatMiner, TorProject, Urlscan.io, VirusTotal, AbuseIPDB 분석 실행
 2. **분석 결과 검토**
    - 분석 결과를 바탕으로 이상 IP 여부 판단
 3. **접근 차단**
@@ -31,12 +31,13 @@
 
 ### 작업 1: IP 분석 시작
 
-- **설명**: Cortex를 통해 ThreatMiner, TorProject, Urlscan.io, VirusTotal을 사용하여 IP 분석을 시작합니다.
+- **설명**: Cortex를 통해 ThreatMiner, TorProject, Urlscan.io, VirusTotal, AbuseIPDB를 사용하여 IP 분석을 시작합니다.
 - **Cortex 분석기**:
   - ThreatMiner: IP와 관련된 도메인, 파일 해시 정보 수집
   - TorProject: Tor 네트워크 사용 여부 확인
   - Urlscan.io: IP와 관련된 URL 스캔
   - VirusTotal: 악성 IP 여부 확인
+  - AbuseIPDB: 악성 IP 여부 확인
 
 ### 작업 2: 분석 결과 검토
 
@@ -46,6 +47,7 @@
   - TorProject: Tor 네트워크 사용
   - Urlscan.io: 악성 URL 발견
   - VirusTotal: 악성 IP로 분류
+  - AbuseIPDB: 악성 IP로 분류
 
 ### 작업 3: 접근 차단
 

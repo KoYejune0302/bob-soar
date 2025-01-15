@@ -19,7 +19,7 @@
 
 - **조건**: 사례 생성 완료
 - **동작**:
-  - Cortex 분석기 실행 (ThreatMiner, TorProject, Urlscan.io, VirusTotal)
+  - Cortex 분석기 실행 (ThreatMiner, TorProject, Urlscan.io, VirusTotal, AbuseIPDB)
   - 분석 결과 수집
 
 ### **2.3. 분석 결과 검토**
@@ -41,6 +41,7 @@
 - **동작**:
   - 분석 결과 및 조치 사항을 포함한 보고서 생성
   - 보고서를 TheHive에 첨부
+  - 보고서를 메일로 전송
 
 ---
 
