@@ -45,7 +45,7 @@ IP 접근을 테스트 하기 위해 Flask를 이용해 간단한 web browser를
 
 ![Flask Code](./images/flask_code.png "Flask Code")
 ![Flask](./images/flask_2.png "Flask")
-이상 IP가 접근했다고 가정하고 해당 접근에 대한 Case를 생성한다.<br>
+이상 IP가 접근했다고 가정하고 해당 접근에 대한 Case를 생성한다.
 
 ### Case 생성 자동화
 
