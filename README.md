@@ -36,13 +36,20 @@ TheHive + Cortex + Python
 
 ## Flow Analysis
 
+### IP 접근
+
+![Flask](./images/flask_1.png "Flask")
+IP 접근을 테스트 하기 위해 Flask를 이용해 간단한 web browser를 구현한다.
+
 ### 이상 IP 접근
 
+![Flask Code](./images/flask_code.png "Flask Code")
+![Flask](./images/flask_2.png "Flask")
 이상 IP가 접근했다고 가정하고 해당 접근에 대한 Case를 생성한다.<br>
-이상 IP는 [IP_LIST](./src/vulnerable_ip.txt "IP_LISt")를 사용하였다.
 
 ### Case 생성 자동화
 
+![Code](./images/thehive_code.png "Code")
 ![Case](./images/thehive_case.png "Case")
 TheHive API를 이용하여 case 생성
 
@@ -58,14 +65,10 @@ TheHive API를 이용하여 각 IP 마다 Observable 생성
 
 ### (TODO) Analyzer
 
-> [!CAUTION]
-> ⚠️ TheHive와 Cortex 연결이 안되어 현재재 코드로만 구현 / Nginx 문제로 생각됨
-
-![Issue](./images/issue_1.png "Issue")
-![Issue](./images/issue_2.png "Issue")
-
+![Analyzer](./images/thehive_analyzer.png "Analyzer")
 ![Jobs](./images/cortex_test.png "Cortex Test")
+Cortex를 이용하여 분석을 진행하고 결과를 확인
 
 ### (TODO) Alert 생성
 
-TODO
+TODO: TheHive Alert를 생성하고 해당 보고서를 메일로 전송하는 기능 구현

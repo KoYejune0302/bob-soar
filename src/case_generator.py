@@ -33,7 +33,7 @@ def get_observable(observableId):
 def generate_case_task_observable(file_path):
     # 1. Create Case
     case_data = {
-        "title": "002-Found Suspicious IP address",
+        "title": "CheckSuspicious IP address",
         "description": "Test IP address",
     }
     case_response = create_case(case_data)

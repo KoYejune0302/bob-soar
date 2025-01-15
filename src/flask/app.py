@@ -54,7 +54,7 @@ def index():
         # Write the resolved IP to the file
         if not ip.startswith("Error"):
             write_ip_to_file(ip)
-            # Run main.py after writing the IP
+            # Run SOAR after writing the IP
             run_main_script()
 
         try:
