@@ -4,7 +4,7 @@ from cortex_job_generator import generate_cortex_jobs, get_cortex_job
 
 def main():
     # Step 1: Generate Case, Task, and Observables
-    file_path = "vulnerable_ip.txt"
+    file_path = "./flask/check_ip.txt"
     case_id, task_id, observableIds = generate_case_task_observable(file_path)
 
     # Step 2: Generate Cortex Jobs

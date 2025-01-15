@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Browser</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+      .header input[type="text"] {
+        width: 300px;
+        padding: 5px;
+      }
+      .header input[type="submit"] {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .header input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .content {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <form method="post">
+        <label for="url">Enter URL or IP:</label>
+        <input type="text" id="url" name="url" required value="{{ url }}" />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div class="content">
+      {% if content %} {{ content | safe }} {% else %}
+      <p>Enter a URL or IP address above to load the webpage.</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
