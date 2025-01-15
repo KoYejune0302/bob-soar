@@ -29,7 +29,8 @@ def run_main_script():
         # Path to main.py in the parent directory
         main_script_path = os.path.join(parent_dir, "main.py")
         # Run the main.py script
-        subprocess.run(["python", main_script_path], check=True)
+        print(f"Running main.py: {main_script_path}")
+        subprocess.run(["python3", main_script_path], check=True)
     except subprocess.CalledProcessError as e:
         return f"Error running main.py: {e}"
     except FileNotFoundError:
