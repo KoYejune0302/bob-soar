@@ -53,6 +53,7 @@ def generate_case_task_observable(file_path):
     for ip_address in ip_addresses:
         observable_data = {"dataType": "ip", "data": ip_address}
         observable_response = create_observable(case_id, observable_data)
+        print(observable_response.json())
         observable_id = observable_response.json()[0]["_id"]
         observableIds.append(observable_id)
 

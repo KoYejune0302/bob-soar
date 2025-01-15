@@ -16,8 +16,8 @@ def resolve_ip(domain):
 
 def write_ip_to_file(ip):
     try:
-        # Write the resolved IP to a file (one IP per line)
-        with open("check_ip.txt", "a") as file:
+        # Overwrite the file with the resolved IP
+        with open("check_ip.txt", "w") as file:
             file.write(f"{ip}\n")
     except IOError as e:
         return f"Error writing to file: {e}"
@@ -51,10 +51,10 @@ def index():
         # Resolve the IP address of the domain
         ip = resolve_ip(domain)
 
-        # Write the resolved IP to the file
+        # Write the resolved IP to the file (overwrite)
         if not ip.startswith("Error"):
             write_ip_to_file(ip)
-            # Run SOAR after writing the IP
+            # Run main.py after writing the IP
             run_main_script()
 
         try:
