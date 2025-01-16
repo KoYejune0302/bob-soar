@@ -63,7 +63,7 @@ TheHive API를 이용하여 Task 생성
 ![Observable](./images/thehive_observable.png "Observable")
 TheHive API를 이용하여 각 IP 마다 Observable 생성
 
-### (TODO) Analyzer
+### Analyzer
 
 ![Analyzer](./images/thehive_analyzer.png "Analyzer")
 ![Jobs](./images/cortex_test.png "Cortex Test")
